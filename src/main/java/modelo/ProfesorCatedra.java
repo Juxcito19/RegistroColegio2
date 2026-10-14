@@ -21,4 +21,8 @@ public class ProfesorCatedra extends Profesor {
     public void setAuxilioTransporte(double auxilioTransporte) {
         this.auxilioTransporte = auxilioTransporte;
     }
+        @Override
+    public double calcularPagoMensual(int horas) {
+        return super.calcularPagoMensual(horas) + auxilioTransporte;
+    }
 }
