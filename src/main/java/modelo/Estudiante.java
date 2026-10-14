@@ -26,4 +26,7 @@ public class Estudiante extends Persona {
     public void setGrado(String grado) {
         this.grado = grado;
     }
+        public boolean perteneceAGrado(String gradoBuscado) {
+        return grado != null && grado.equalsIgnoreCase(gradoBuscado);
+    }
 }
