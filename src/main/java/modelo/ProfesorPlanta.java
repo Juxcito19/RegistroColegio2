@@ -31,4 +31,10 @@ public class ProfesorPlanta extends Profesor {
         double base = super.calcularPagoMensual(horas);
         return base + calcularBonificacion(base);
     }
+        @Override
+    public String toString() {
+        return super.toString()
+                + " | Tipo: Planta"
+                + " | Años de antigüedad: " + aniosAntiguedad;
+    }
 }
