@@ -14,4 +14,11 @@ public class ProfesorCatedra extends Profesor {
     public ProfesorCatedra(double auxilioTransporte) {
         this.auxilioTransporte = auxilioTransporte;
     }
+        public double getAuxilioTransporte() {
+        return auxilioTransporte;
+    }
+
+    public void setAuxilioTransporte(double auxilioTransporte) {
+        this.auxilioTransporte = auxilioTransporte;
+    }
 }
