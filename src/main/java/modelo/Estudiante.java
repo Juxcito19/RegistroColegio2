@@ -19,4 +19,11 @@ public class Estudiante extends Persona {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
+        public String getGrado() {
+        return grado;
+    }
+
+    public void setGrado(String grado) {
+        this.grado = grado;
+    }
 }
