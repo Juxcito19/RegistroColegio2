@@ -48,4 +48,11 @@ public class Profesor extends Persona {
     public void setHorasDictadas(int horasDictadas) {
         this.horasDictadas = horasDictadas;
     }
+    public double calcularPagoMensual() {
+        return calcularPagoMensual(horasDictadas);
+    }
+    public double calcularPagoMensual(int horas) {
+        double base = salarioHora * horas;
+        return base + (base * PORCENTAJE_PREPARACION);
+    }
 }
