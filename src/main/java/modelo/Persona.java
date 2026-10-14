@@ -56,4 +56,11 @@ public class Persona {
         }
         return Period.between(fechaNacimiento, fechaReferencia).getYears();
     }
+        @Override
+    public String toString() {
+        return "Nombre: " + nombre
+                + " | Dirección: " + direccion
+                + " | Teléfono: " + telefono
+                + " | Edad: " + calcularEdad();
+    }
 }
