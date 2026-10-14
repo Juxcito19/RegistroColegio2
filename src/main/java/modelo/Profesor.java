@@ -33,4 +33,19 @@ public class Profesor extends Persona {
     public void setArea(String area) {
         this.area = area;
     }
+        public double getSalarioHora() {
+        return salarioHora;
+    }
+
+    public void setSalarioHora(double salarioHora) {
+        this.salarioHora = salarioHora;
+    }
+
+    public int getHorasDictadas() {
+        return horasDictadas;
+    }
+
+    public void setHorasDictadas(int horasDictadas) {
+        this.horasDictadas = horasDictadas;
+    }
 }
