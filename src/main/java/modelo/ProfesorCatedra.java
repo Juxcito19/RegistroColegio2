@@ -11,5 +11,7 @@ package modelo;
 public class ProfesorCatedra extends Profesor {
 
     private double auxilioTransporte;
-
+    public ProfesorCatedra(double auxilioTransporte) {
+        this.auxilioTransporte = auxilioTransporte;
+    }
 }
