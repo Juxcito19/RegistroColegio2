@@ -29,4 +29,10 @@ public class Estudiante extends Persona {
         public boolean perteneceAGrado(String gradoBuscado) {
         return grado != null && grado.equalsIgnoreCase(gradoBuscado);
     }
+            @Override
+    public String toString() {
+        return super.toString()
+                + " | Código: " + codigo
+                + " | Grado: " + grado;
+    }
 }
