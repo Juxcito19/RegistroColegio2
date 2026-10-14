@@ -26,4 +26,9 @@ public class ProfesorPlanta extends Profesor {
     public double calcularBonificacion(double pagoBase) {
         return pagoBase * PORCENTAJE_ANTIGUEDAD * aniosAntiguedad;
     }
+        @Override
+    public double calcularPagoMensual(int horas) {
+        double base = super.calcularPagoMensual(horas);
+        return base + calcularBonificacion(base);
+    }
 }
