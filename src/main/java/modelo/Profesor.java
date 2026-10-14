@@ -58,4 +58,12 @@ public class Profesor extends Persona {
     public double calcularPrestaciones() {
         return calcularPagoMensual() * PORCENTAJE_PRESTACIONES;
     }
+        @Override
+    public String toString() {
+        return super.toString()
+                + " | Cédula: " + cedula
+                + " | Área: " + area
+                + " | Pago mensual: " + calcularPagoMensual()
+                + " | Prestaciones: " + calcularPrestaciones();
+    }
 }
