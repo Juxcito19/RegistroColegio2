@@ -4,6 +4,7 @@
  */
 package modelo;
 import java.time.LocalDate;
+import java.time.Period;
 /**
  *
  * @author Usuario
@@ -44,5 +45,15 @@ public class Persona {
 
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
+    }
+        public int calcularEdad() {
+        return calcularEdad(LocalDate.now());
+    }
+
+    public int calcularEdad(LocalDate fechaReferencia) {
+        if (fechaNacimiento == null || fechaReferencia == null) {
+            return 0;
+        }
+        return Period.between(fechaNacimiento, fechaReferencia).getYears();
     }
 }
