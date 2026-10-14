@@ -38,4 +38,11 @@ public class Persona {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
 }
