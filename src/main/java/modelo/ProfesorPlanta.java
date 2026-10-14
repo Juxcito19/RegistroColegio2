@@ -13,5 +13,11 @@ public class ProfesorPlanta extends Profesor {
     private static final double PORCENTAJE_ANTIGUEDAD = 0.02;
 
     private int aniosAntiguedad;
+    public int getAniosAntiguedad() {
+        return aniosAntiguedad;
+    }
 
+    public void setAniosAntiguedad(int aniosAntiguedad) {
+        this.aniosAntiguedad = aniosAntiguedad;
+    }
 }
