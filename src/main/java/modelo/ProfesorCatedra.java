@@ -25,4 +25,10 @@ public class ProfesorCatedra extends Profesor {
     public double calcularPagoMensual(int horas) {
         return super.calcularPagoMensual(horas) + auxilioTransporte;
     }
+        @Override
+    public String toString() {
+        return super.toString()
+                + " | Tipo: Cátedra"
+                + " | Auxilio de transporte: " + auxilioTransporte;
+    }
 }
