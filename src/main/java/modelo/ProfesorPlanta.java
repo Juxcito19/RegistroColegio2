@@ -20,4 +20,10 @@ public class ProfesorPlanta extends Profesor {
     public void setAniosAntiguedad(int aniosAntiguedad) {
         this.aniosAntiguedad = aniosAntiguedad;
     }
+    public double calcularBonificacion() {
+        return calcularBonificacion(super.calcularPagoMensual(getHorasDictadas()));
+    }
+    public double calcularBonificacion(double pagoBase) {
+        return pagoBase * PORCENTAJE_ANTIGUEDAD * aniosAntiguedad;
+    }
 }
