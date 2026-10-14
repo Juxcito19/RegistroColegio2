@@ -3,11 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package modelo;
-
+import java.time.LocalDate;
 /**
  *
  * @author Usuario
  */
 public class Persona {
     
+    private String nombre;
+    private String direccion;
+    private String telefono;
+    private LocalDate fechaNacimiento;
 }
