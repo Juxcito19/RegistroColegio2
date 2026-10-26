@@ -4,6 +4,8 @@
 
 package com.mycompany.registrocolegiooo;
 
+import vista.VentanaColegio;
+
 /**
  *
  * @author Usuario
@@ -11,6 +13,6 @@ package com.mycompany.registrocolegiooo;
 public class RegistroColegiooo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        java.awt.EventQueue.invokeLater(() -> new VentanaColegio().setVisible(true));
     }
 }
